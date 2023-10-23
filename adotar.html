@@ -4,19 +4,71 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <title>Adoção</title>
+    <link rel="stylesheet" href="assets/css/global.css">
+    <link rel="stylesheet" href="assets/css/adotar.css">
+
+  <title>Adotar</title>
   </head>
   <body>
-    <header class="cabecalho">
-      <nav class="cabecalho__menu">
-        <img src="img/Logo1.png" alt="Logo ConnectPet marrom">
-        <a class="cabecalho__menu__link" href="index.html">Home</a>
-        <a class="cabecalho__menu__link" href="adotar.html">Adotar</a>
-        <a class="cabecalho__menu__link" href="doar.html">Doar</a>
-        <button class="cabecalho__menu__button" onclick="window.location.href='entrar.html'">Entrar</button>
-        <button class="cabecalho__menu__button" onclick="window.location.href='cadastro.html'">Cadastre-se</button>
-    </nav>
+    <header>
+      <nav class="nav-bar">
+          <div class="logo">
+              <h1><img src="assets/img/Logo1.png" alt="Logo ConnectPet marrom"></h1>
+          </div>
+
+          <div class="nav-list">
+              <ul>
+                  <li class="nav-item"><a href="inicio.html" class="nav-link">Início</a></li>
+                  <li class="nav-item"><a href="doar.html" class="nav-link">Adotar</a></li>
+                  <li class="nav-item"><a href="adotar.html" class="nav-link">Doar</a></li>
+                  <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre</a></li>
+              </ul>
+          </div>
+
+          <div class="login-button">
+              <button><a href="entrar.html">Entrar</a></button>
+              <button><a href="cadastro.html">Cadastre-se</a></button>
+          </div>
+
+      </nav>
     </header>
+
+    <section class="slider">
+      <div class="slider-content">
+
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+
+        <div class="slide-box primeiro">
+          <img src="assets/img/slide-1-desk.jpg" alt="slide 1" class="img-desktop">
+          <img src="assets/img/slide-1-mob.jpg" alt="slide 1" class="img-mobile">
+        </div>
+
+        <div class="slide-box">
+          <img src="assets/img/slide-2-desk.jpg" alt="slide 2" class="img-desktop">
+          <img src="assets/img/slide-2-mob.jpg" alt="slide 2" class="img-mobile">
+        </div>
+
+        <div class="slide-box">
+          <img src="assets/img/slide-3-desk.jpg" alt="slide 3" class="img-desktop">
+          <img src="assets/img/slide-3-mob.jpg" alt="slide 3" class="img-mobile">
+        </div>
+
+        <div class="nav-auto">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+        </div>
+
+        <div class="nav-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+        </div>
+
+      </div>
+    </section>
 
     <section class="apresentacao__conteudo">
       <h1 class="apresentacao__conteudo__titulo">Animais para Adoção</h1>
@@ -61,5 +113,6 @@
     <footer class="rodape">
       <p>&copy; ConnectPet 2023</p>
     </footer>
+    <script src="assets/slider.js"></script>
   </body>
 </html>
