@@ -38,14 +38,16 @@ ul li.item-menu{
     transition: .4s;
 }
 
-ul li.item-menu.ativo a .icon > i{
-    color: #ecc92b;
-    
-}
-
-
 ul li.item-menu:hover{
     background: #ecc92b;
+}
+
+ul li.item-menu.ativo:hover a .txt-link{
+    color: #fff;
+}
+
+ul li.item-menu.ativo:hover a .icon > i{
+    color: #fff;
 }
 
 ul li.item-menu a{
@@ -73,3 +75,10 @@ ul li.item-menu a .icon > i{
     
 }
 
+ul li.item-menu.ativo a .icon > i{
+    color: #ecc92b;   
+}
+
+ul li.item-menu.ativo a .txt-link{
+    color: #ecc92b;
+}
