@@ -13,12 +13,12 @@ body{
 
 nav.menu-lateral{
     width: 70px;
-    height: 60%;
+    height: 80%;
     background-color: #4F200D;
     padding: 40px 0 40px 0;
     box-shadow: 0 2px 6px 4px #3d322d;
     position: fixed;
-    top: 20%;
+    top: 10%;
     left: 0;
     overflow: hidden;
     transition: .5s;
@@ -71,8 +71,7 @@ nav.menu-lateral:hover .txt-link{
 
 ul li.item-menu a .icon > i{
     font-size: 30px;
-    margin-left: 10px;
-    
+    margin-left: 10px; 
 }
 
 ul li.item-menu.ativo a .icon > i{
