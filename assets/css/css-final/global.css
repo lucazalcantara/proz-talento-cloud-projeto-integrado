@@ -124,7 +124,7 @@ header {
 }
 
 .elemento .btn:hover{
-    background-color: #7c3b21;
+    background-color: #af6041;
 }
 
 .elemento .btn .icon{
@@ -137,9 +137,8 @@ header {
     color: #fff;
     font-size: 20px;
     
+    
 }
-
-
 
 
 section{
@@ -158,18 +157,36 @@ section{
 }
 
 .post .hidden img{
-    height: 380px;
-    width: 400px;
+    height: 410px;
+    width: 430px;
     margin-top: 20px;
     margin-bottom: 80px;
     border-radius: 20px;
-    transition: .3s;
 }
 
-.post .hidden img:hover{
+.post .hidden button{
+    position: relative;
+    background: none;
+    color: #ffffff;
     cursor: pointer;
-    width: 450px;
-    height: 430px;
+    top: -70px;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    transition: .2s;
+    background-color: #4F200D;
+    justify-content: space-between;
+    margin: 5px;
+    
+}
+
+.post .hidden button:hover{
+    background-color: #af6041;
+}
+
+.post .hidden i{
+    font-size: 30px;
 }
 
 .show{
