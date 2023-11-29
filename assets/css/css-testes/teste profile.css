@@ -1,0 +1,57 @@
+
+.nav-bar li{
+    display: inline-block;
+}
+
+.nav-bar li a{
+    display: inline-block;
+    padding: 0px;
+}
+
+
+.nav-bar .profile-button .dropdown-menu{
+    display: block;
+    margin: 0;
+    margin-top: -4px;
+    margin-left: -76px;
+    padding: 0;
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    background-color: #4F200D;
+    overflow: hidden;
+    border-radius:  0 0 20px 20px;
+    transition: .7s;
+}
+
+.nav-bar .profile-button .dropdown-menu a:nth-child(1){
+    margin-top: 28px;
+}
+
+.nav-bar .profile-button .dropdown-menu a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px;
+    margin-left: 3px; 
+    padding: 10px;
+    
+}
+
+.nav-bar .profile-button .dropdown-menu a i{
+    font-size: 18px;
+}
+
+.nav-bar .profile-button .dropdown-menu a i .drop-txt{
+    font-size: 17px;
+    font-style: normal;
+}
+
+.nav-bar .profile-button:hover .dropdown-menu{
+    width: 140px;
+    height: 200px;
+    
+}
+
+
+
