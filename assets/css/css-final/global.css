@@ -90,6 +90,64 @@ header {
 }
 
 
+.nav-bar li{
+    display: inline-block;
+}
+
+.nav-bar li a{
+    display: inline-block;
+    padding: 0px;
+}
+
+
+.nav-bar .profile-button .dropdown-menu{
+    display: block;
+    margin: 0;
+    margin-top: -4px;
+    margin-left: -76px;
+    padding: 0;
+    position: absolute;
+    width: 140px;
+    height: 0px;
+    background-color: #4F200D;
+    overflow: hidden;
+    border-radius:  0 0 20px 20px;
+    transition: .7s;
+}
+
+.nav-bar .profile-button .dropdown-menu a:nth-child(1){
+    margin-top: 28px;
+}
+
+.nav-bar .profile-button .dropdown-menu a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px;
+    margin-left: 3px; 
+    padding: 10px;
+    
+}
+
+.nav-bar .profile-button .dropdown-menu a i{
+    font-size: 18px;
+}
+
+.nav-bar .profile-button .dropdown-menu a i .drop-txt{
+    font-size: 17px;
+    font-style: normal;
+}
+
+.nav-bar .profile-button:hover .dropdown-menu{
+    width: 140px;
+    height: 200px;
+    
+}
+
+
+
+
+
 .container input{
     height: 150px;
     width: 700px;
@@ -166,7 +224,7 @@ section:nth-child(1){
     border-radius: 20px;
 }
 
-.post .hidden button{
+.post .buttons button{
     position: relative;
     background: none;
     color: #ffffff;
@@ -178,17 +236,20 @@ section:nth-child(1){
     height: 45px;
     transition: .2s;
     background-color: #4F200D;
-    justify-content: space-between;
     margin: 5px;
-    
 }
 
-.post .hidden button:hover{
-    background-color: #af6041;
+.post .buttons i{
+    font-size: 20px;
+    color: #fff
 }
 
-.post .hidden i{
-    font-size: 30px;
+.post .buttons button:hover{
+    background-color: #eef112;
+}
+
+.post .buttons button:hover i{
+    color: #000;
 }
 
 .show{
@@ -198,8 +259,13 @@ section:nth-child(1){
     transform: translateX(0);
 }
 
-.post .hidden a{
-    margin-left: -635px;
+.post .box-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+}
+
+.post .box-text a{
     font-size: 25px;
     margin-bottom: 10px;
     color: #4F200D;
@@ -207,8 +273,7 @@ section:nth-child(1){
 }
 
 p{
-    
-    margin-left: 260px;
+    margin-left: 0px;
     margin-right: 260px;
     font-size: 20px;
     color: #000;
@@ -218,7 +283,7 @@ p{
 h2{
     text-align: center;
     font-size: 30px;
-    margin-left: -635px;
+    margin-left: -725px;
     margin-bottom: 15px;
 
 }

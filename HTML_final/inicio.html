@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/css-final/inicio.css">
     <link rel="stylesheet" href="../assets/css/css-final/global.css">
+
     <link rel="stylesheet" href="../assets/css/css-final/painel-lateral.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-
+    
 
     <title>Início</title>
 </head>
@@ -17,7 +18,7 @@
     <header>
         <nav class="nav-bar">
             <div class="logo">
-                <a href="../HTML final/inicio.html">
+                <a href="../HTML_final/inicio.html">
                     <img src="../assets/img/Logo1.png" alt="Logo ConnectPet">
                 </a>
             </div>
@@ -25,21 +26,34 @@
             <div class="search-bar">
                 <input type="text" class="search-text" placeholder="Pesquisar...">
                 <a class="search-btn" href="#">
-                    <img src="../assets/img/lupa.svg" alt="" class="lupa">
+                    <img src="../assets/img/lupa.svg" alt="lupa de pesquisa" class="lupa">
                 </a>
             </div>
 
-            <div class="profile-button">
-                <a href="#">
-                    <span class="icon"><i class="bi bi-person-circle"></i></span>
-                </a>
-                <div class="dropdown-menu">
-                    <ul>
-                        <li>Meu perfil</li>
-                        <li>Configurações</li>
-                        <li>Ajuda</li>
-                    </ul>
-                </div>
+            <ul>
+                <li class="profile-button">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                    </a>
+
+                    <div class="dropdown-menu">
+                        <a href="#">
+                            <i class="bi bi-person-fill"><span class="drop-txt">  Meu perfil</span></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-gear-fill"><span class="drop-txt">  Configurações</span></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-question-circle-fill"><span class="drop-txt">  Ajuda</span></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-box-arrow-right"><span class="drop-txt">  Sair</span></i>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+            
+                
             </div>
 
         </nav>
@@ -105,16 +119,39 @@
 
     <div class="post">
         <section class="hidden">
-            <h2>Amanda Junqueira</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+            <div class="box-text">
+                <a href="#"><i class="bi bi-person-circle"></i> Carlos Marttiolli</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+            </div>
         </section>
 
         <section class="hidden">  
             <img src="../assets/img/dog-3277416_1280.jpg">
-            <div>
+            <div class="buttons">
                 <button class="like"><i class="bi bi-hand-thumbs-up"></i></button>
                 <button class="dislike"><i class="bi bi-hand-thumbs-down"></i></button>
-                <button class="share"><i class="bi bi-send"></i></button>
+                <button class="share"><i class="bi bi-share"></i></button>
+                <button class="comment"><i class="bi bi-chat-left-dots"></i></button>
+            </div>
+        </section>
+
+
+
+        <section class="hidden"> 
+            <div class="box-text">
+                <a href="#"><i class="bi bi-person-circle"></i> Amanda Junqueira</a>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+            </div>   
+            
+        </section>
+
+        <section class="hidden">  
+            <img src="../assets/img/cat1.jpg">
+            <div class="buttons">
+                <button class="like"><i class="bi bi-hand-thumbs-up"></i></button>
+                <button class="dislike"><i class="bi bi-hand-thumbs-down"></i></button>
+                <button class="share"><i class="bi bi-share"></i></button>
+                <button class="comment"><i class="bi bi-chat-left-dots"></i></button>
             </div>
         </section>
 
