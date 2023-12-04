@@ -1,17 +1,180 @@
-h1 {
+/*CONTAINER PARA INSERIR POSTAGENS*/
+.container input{
+    height: 150px;
+    width: 700px;
+    margin-top: 110px;
+    margin-left: 320px;
+    background-color: #e9e8e8;
     text-align: center;
-    font-size: 50px;
-    color: #4F200D;
-    text-shadow: 0px 2px 3px #8a5f3b;
+    font-size: 25px;
+    border: solid 3px #4F200D;
+    border-radius: 20px;
+    transition: .5s;
 }
 
-h2 {
+.container input:hover{
+    background-color: #fff;
+}
+
+
+/*Botões do container*/
+.elemento .btn{
+    display: inline-block;
+    flex-wrap: nowrap;
+    height: 30px;
+    width: 30px;
+    margin-top: 10px;
+    background-color: #4F200D;
+    border-radius: 50%;
+}
+
+.elemento .btn:nth-child(1){
+    margin-left: 880px;
+}
+
+.elemento .btn .icon{
+    text-align: center;
+    margin-top: 2px;
+}
+
+.elemento .btn .icon i{
+    color: #fff;
+    font-size: 20px;
+}
+
+.elemento .btn:hover{
+    background-color: #eef112;
+}
+
+.elemento .btn:hover .icon i{
+    color: #000;
+}
+
+
+
+
+
+/*SEÇÃO DE POSTAGENS*/
+section{
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(9px);
+    transition: all 1.5s;
+    transform: translateX(-100%);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+    transform: translateX(0);
+}
+
+section:nth-child(1){
+    margin-top: 70px;
+}
+
+
+/*Cabeçalho do post*/
+.post .box-text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 320px;
+}
+
+.post .box-text a{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #4F200D;
+    text-decoration: none;
+}
+
+.post .box-text p{
+    margin-left: 0px;
+    margin-right: 260px;
+    font-size: 20px;
+    color: #000;
+    word-wrap: nowrap;
+}
+
+
+/*Imagem do post*/
+.post .hidden img{
+    height: 410px;
+    width: 430px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+
+/*Botões do post*/
+.post .buttons button{
+    position: relative;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    top: -70px;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    transition: .2s;
+    background-color: #4F200D;
+    margin: 5px;
+}
+
+.post .buttons i{
+    font-size: 20px;
+    color: #fff
+}
+
+.post .buttons button:hover{
+    background-color: #eef112;
+}
+
+.post .buttons button:hover i{
+    color: #000;
+}
+
+
+
+
+
+/*SEÇÃO DE SHORTS*/
+section h2{
     text-align: center;
     font-size: 30px;
-    color: #4F200D;
-    text-shadow: 0px 2px 4px #8a5f3b;
+    margin-left: -725px;
+    margin-bottom: 15px;
 }
 
-p {
-    text-align: justify;
+.shorts{
+    display: flex;
+    gap: 20px;
+}
+
+.shorts .hidden img{
+    background-color: #fff;
+    border-radius: 20px;
+    margin: 2px;
+    width: 250px;
+    height: 400px;
+}
+
+.shorts:nth-child(2){
+    transition-delay: 400ms;
+}
+
+.shorts:nth-child(3){
+    transition-delay: 700ms;
+}
+
+.shorts:nth-child(4){
+    transition-delay: 1000ms;
 }

@@ -1,4 +1,8 @@
+/*CONFIGURAÇÕES GERAIS*/
+
+/*Fonte utilizada*/
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100&display=swap');
+
 
 * {
     padding: 0;
@@ -20,7 +24,6 @@ header {
     z-index: 1;
 }
 
-
 .nav-bar {
     display: flex;
     justify-content: space-between;
@@ -28,6 +31,12 @@ header {
     position: relative;
     
 }
+
+
+
+
+
+/*LOGO CONNECTPET*/
 .nav-bar .logo img{
     display: flex;
     margin-left: 35px;
@@ -36,25 +45,9 @@ header {
 
 
 
-.nav-bar .profile-button{
-    background-color: none;
-    margin-right: 2rem;
-    margin-top: 1.5rem;
-   
-}
 
-.nav-bar .profile-button i{
-    border: none;
-    color: #fff;
-    background-color: none;
-    padding: 0;
-    font-size: 2rem;
-}
 
-.nav-bar .profile-button i:hover {
-    color: #eef112;
-}
-
+/*BARRA DE PESQUISA*/
 .search-bar{
     margin-top: 40px;
     transform: translate(-50%, -50%);
@@ -90,6 +83,30 @@ header {
 }
 
 
+
+
+
+/*BOTÃO PROFILE*/
+.nav-bar .profile-button{
+    background-color: none;
+    margin-right: 2rem;
+    margin-top: 1.5rem;
+}
+
+.nav-bar .profile-button i{
+    border: none;
+    color: #fff;
+    background-color: none;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.nav-bar .profile-button i:hover {
+    color: #eef112;
+}
+
+
+/*Drop-menu do botão profile*/
 .nav-bar li{
     display: inline-block;
 }
@@ -98,7 +115,6 @@ header {
     display: inline-block;
     padding: 0px;
 }
-
 
 .nav-bar .profile-button .dropdown-menu{
     display: block;
@@ -126,7 +142,6 @@ header {
     margin: 0px;
     margin-left: 3px; 
     padding: 10px;
-    
 }
 
 .nav-bar .profile-button .dropdown-menu a i{
@@ -141,176 +156,6 @@ header {
 .nav-bar .profile-button:hover .dropdown-menu{
     width: 140px;
     height: 200px;
-    
-}
-
-
-
-
-
-.container input{
-    height: 150px;
-    width: 700px;
-    margin-top: 110px;
-    margin-left: 320px;
-    background-color: #e9e8e8;
-    text-align: center;
-    font-size: 25px;
-    border: solid 3px #4F200D;
-    border-radius: 20px;
-    transition: .5s;
-    
-}
-
-.container input:hover{
-    background-color: #fff;
-}
-
-.elemento .btn{
-    display: inline-block;
-    flex-wrap: nowrap;
-    height: 30px;
-    width: 30px;
-    margin-top: 10px;
-    background-color: #4F200D;
-    border-radius: 50%;
-
-}
-
-.elemento .btn:nth-child(1){
-    margin-left: 900px;
-}
-
-.elemento .btn:hover{
-    background-color: #af6041;
-}
-
-.elemento .btn .icon{
-    text-align: center;
-    margin-top: 2px;
-}
-
-
-.elemento .btn .icon i{
-    color: #fff;
-    font-size: 20px;
-    
-    
-}
-
-
-section{
-    display: grid;
-    place-items: center;
-    align-items: center;
-}
-
-section:nth-child(1){
-    margin-top: 70px;
-}
-
-.hidden{
-    opacity: 0;
-    filter: blur(9px);
-    transition: all 1.5s;
-    transform: translateX(-100%);
-}
-
-.post .hidden img{
-    height: 410px;
-    width: 430px;
-    margin-top: 20px;
-    margin-bottom: 80px;
-    border-radius: 20px;
-}
-
-.post .buttons button{
-    position: relative;
-    background: none;
-    color: #ffffff;
-    cursor: pointer;
-    top: -70px;
-    border-radius: 50%;
-    border: none;
-    width: 45px;
-    height: 45px;
-    transition: .2s;
-    background-color: #4F200D;
-    margin: 5px;
-}
-
-.post .buttons i{
-    font-size: 20px;
-    color: #fff
-}
-
-.post .buttons button:hover{
-    background-color: #eef112;
-}
-
-.post .buttons button:hover i{
-    color: #000;
-}
-
-.show{
-    opacity: 1;
-    filter: blur(0);
-    transition: all 1s;
-    transform: translateX(0);
-}
-
-.post .box-text{
-    display: flex;
-    flex-direction: column;
-    margin-left: 320px;
-}
-
-.post .box-text a{
-    font-size: 25px;
-    margin-bottom: 10px;
-    color: #4F200D;
-    text-decoration: none;
-}
-
-p{
-    margin-left: 0px;
-    margin-right: 260px;
-    font-size: 20px;
-    color: #000;
-    word-wrap: nowrap;
-}
-
-h2{
-    text-align: center;
-    font-size: 30px;
-    margin-left: -725px;
-    margin-bottom: 15px;
-
-}
-
-.logos{
-    display: flex;
-    gap: 20px;
-}
-
-.logos .hidden img{
-    background-color: #fff;
-    border-radius: 20px;
-    margin: 2px;
-    width: 250px;
-    height: 400px;
-}
-
-.logos:nth-child(2){
-    transition-delay: 400ms;
-}
-
-.logos:nth-child(3){
-    transition-delay: 700ms;
-}
-
-.logos:nth-child(4){
-    transition-delay: 1000ms;
 }
 
 
@@ -321,49 +166,8 @@ h2{
 
 
 
-
-
-
-
-
+/*RESPONSIVIDADE*/
 /*
-.postagem button{
-    height: 30px;
-    width: 50px;
-    margin-top: 270px;
-    margin-left: 900px;
-    position: absolute;
-    background-color: #e7e435;
-    border: solid 2px #4F200D;
-    border-radius: 10px;
-}
-
-.postagem button a{
-    text-decoration: none;
-    color: #000;
-}
-
-.postagem button:hover{
-    background-color: #eef112;
-}
-
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media screen and (max-width: 730px) {
     .nav-bar {
         padding: 1.5rem 4rem;
