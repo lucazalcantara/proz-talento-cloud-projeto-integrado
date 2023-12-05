@@ -10,8 +10,8 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 
     <!--CSS ESPECÍFICO-->
-    <link rel="stylesheet" href="../assets/css/css-testes/doacao.css">
-    <title>Doação</title>
+    <link rel="stylesheet" href="../assets/css/css-final/doar.css">
+    <title>Doar</title>
   </head>
 
   <body>
@@ -95,75 +95,79 @@
 
 
     <section class="painel">
-      <h1>
-        Maravilha! Nos apresente nosso novo amiguinho(a)!
-      </h1>
-      <div class="painel-fields">
-        <div class="field">
-            <label for="nome">Nome:</label>
-            <input type="text" class="input-data" name="nome" required>
-        </div>
-        <br/>
-        <div class="field">
-            <label for="idade">Idade:</label>
-            <input type="number" class="input-data" name="idade" required>
-        </div>
-        <br/>
-        <div class="field">
-            <label for="espécie">Espécie:</label>
-            <input type="text" class="input-data" name="espécie" required>
-        </div>
-        <br/>
-        <div class="field">
-            <label for="raça">Raça:</label>
-            <input type="text" class="input-data" name="raça" required>
-        </div>
-        <br/>
-        <div class="field">
-            <label for="cidade">Cidade:</label>
-            <input type="text" class="input-data" name="cidade" required>
-        </div>
-        <br/>
-        <div class="field">
-            <label for="estado">Estado:</label>
-            <input type="text" class="input-data" name="estado" required>
-        </div>
+        <h1>Maravilha! Nos apresente nosso novo amiguinho(a)!</h1>
 
-        <div class="gender">
-            <div class="gender-input">
-                <input type="radio" id="female" name="gender">
-                <label for="female">Feminino</label>
+        <div class="painel-fields">
+            <div class="field">
+                <label for="nome">Nome:</label>
+                <input type="text" class="input-data" name="nome" required>
             </div>
-            <div class="gender-input">
-                <input type="radio" id="male" name="gender">
-                <label for="male">Masculino</label>
+            <br/>
+
+            <div class="field">
+                <label for="idade">Idade:</label>
+                <input type="number" class="input-data" name="idade" required>
+            </div>
+            <br/>
+
+            <div class="field">
+                <label for="espécie">Espécie:</label>
+                <input type="text" class="input-data" name="espécie" required>
+            </div>
+            <br/>
+
+            <div class="field">
+                <label for="raça">Raça:</label>
+                <input type="text" class="input-data" name="raça" required>
+            </div>
+            <br/>
+
+            <div class="field">
+                <label for="cidade">Cidade:</label>
+                <input type="text" class="input-data" name="cidade" required>
+            </div>
+            <br/>
+
+            <div class="field">
+                <label for="estado">Estado:</label>
+                <input type="text" class="input-data" name="estado" required>
+            </div>
+
+            <div class="gender">
+                <div class="gender-input">
+                    <input type="radio" id="female" name="gender">
+                    <label for="female">Fêmea</label>
+                </div>
+                <div class="gender-input">
+                    <input type="radio" id="male" name="gender">
+                    <label for="male">Macho</label>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="fotos-pet">
+            <h2>Adicione algumas fotos do pet no campo abaixo:</h2>
+            <div class="incluir">
+                <a href="#">
+                    <img src="../assets/img/icon-fotos.png" alt="ícone inserir fotos">
+                </a>
             </div>
         </div>
-      </div>
 
+        <div class="detalhes-pet">
+            <h2>Faça uma breve descrição sobre o pet no campo abaixo:</h2>
+            <div class="descricao">
+                <input type="text" placeholder="Descreva o pet aqui...">
+            </div>
+        </div>
 
-      <!--
-      <label for="genero">Gênero:</label>
-      <select id="genero" name="genero">
-        <option value="macho">Macho</option>
-        <option value="femea">Fêmea</option>
-      </select>
-      <div>
+        <div class="doar-pet">
+            <button><a href="#">Doar</a></button>
+        </div>
 
-
- 
-        <label for="mensagem">Descrição do pet:</label>
-        <br/>
-        <textarea rows="8" name="msg"></textarea>
-    </div>
-    <label for="imagem">Adicione imagens à publicação:</label>
-<input type="file" id="imagem" name="imagem" accept="image/*" />
     </section>
 
-    <footer class="rodape">
-      <p>&copy; ConnectPet 2023</p>
-    </footer>
-    -->
   </body>
 
   <!--IMPORTAÇÃO DE JAVASCRIPT-->

@@ -1,0 +1,150 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+
+.painel{
+    margin-left: 260px;
+    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #4f200d;
+    width: 800px;
+    height: 425px;
+    position: fixed;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px 4px #3d322d;
+}
+
+h1{
+    margin-top: 20px;
+    color: #eef112;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.painel-field{
+    position: fixed;
+}
+
+.field:nth-child(1){
+    margin-top: 20px;
+}
+
+label{
+    color: #fff;
+    position: absolute;
+    margin-left: -70px;
+    
+}
+
+.input-data{
+    position: relative;
+    width: 200px;
+    height: 25px;
+    border-radius: 20px;
+    border: none;
+    outline: 0;
+    margin-right: 400px;
+    text-align: center;
+}
+
+.input-data:hover{
+    border: 2px solid #eef112;
+}
+
+.gender{
+    width: 280px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: -76px;
+    margin: 5;
+}
+
+.fotos-pet{
+    position: fixed;
+    margin-top: 70px;
+    margin-left: 300px;
+    width: 250px;
+    height: 300px;
+}
+
+.fotos-pet h2{
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+    
+}
+
+.fotos-pet .incluir img{
+    margin-top: 10px;
+    width: 70px;
+    height: 70px;
+    margin-left: 65px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+}
+
+.fotos-pet .incluir img:hover{
+    border: 3px solid #eef112;
+    cursor: pointer;
+}
+
+.detalhes-pet{
+    position: fixed;
+    margin-top: 210px;
+    margin-left: 300px;
+    width: 250px;
+    height: 300px;
+}
+
+
+.detalhes-pet h2{
+    color: #fff;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.detalhes-pet .descricao input{
+    margin-top: 10px;
+    width: 270px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.detalhes-pet .descricao input:hover{
+    border: 2px solid #eef112;
+}
+
+.doar-pet button{
+    position: absolute;
+    width: 230px;
+    height: 45px;
+    margin-left: 45px;
+    margin-top: -20px;
+    background-color: #c7c94a;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    
+}
+
+.doar-pet a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+}
+
+.doar-pet button:hover{
+    background-color: #eef112;
+}
+
