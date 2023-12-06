@@ -14,10 +14,11 @@ body{
     background-color: #4F200D;
     border-radius: 30px;
     box-shadow: 0 2px 6px 2px #3d322d;
+    z-index: 5;
 }
 
 .filtro-pet input{
-    margin-left: 45px;
+    margin-left: 15px;
     margin-top: 10px;
     width: 250px;
     height: 30px;
@@ -29,6 +30,7 @@ body{
 }
 
 .filtro-pet a{
+    position: relative;
     margin-top: 13px;
     margin-left: 2px;
     font-size: 20px;
@@ -37,6 +39,12 @@ body{
 
 .filtro-pet a:hover{
     color: #eef112;
+}
+
+.filtro-pet span{
+    margin-top: 17px;
+    margin-left: 19px;
+    color: #fff;
 }
 
 .filtro-pet .filtro-esp{
@@ -51,7 +59,7 @@ body{
     margin-left: 20px;
 }
 
-.filtro-pet .filtro-esp a:hover{
+.filtro-pet .filtro-esp:hover{
     color: #eef112;
 }
 
@@ -66,11 +74,64 @@ body{
     margin-left: 5px;
 }
 
-.dropdown .dropdown-filter{
-    display: none;
+.filtro-pet li{
+    display: inline-block;
 }
 
-/*CONTINUAR DAQUI 05.12*/
+.filtro-pet li a{
+    display: inline-block;
+    padding: 0px;
+}
+
+.filtro-pet .dropdown .dropdown-filter{
+    display: block;
+    margin: 0;
+    margin-top: 1px;
+    margin-left: 3px;
+    padding: 0;
+
+    width: 80px;
+    height: 0px;
+    background-color: #4F200D;
+    overflow: hidden;
+    border-radius:  0 0 20px 20px;
+    transition: .7s;
+}
+
+.filtro-pet .dropdown .dropdown-filter a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px;
+    margin-left: -4px; 
+    padding: 4px;
+}
+
+.filtro-pet .dropdown .dropdown-filter a:nth-child(1){
+    margin-top: 15px;
+}
+
+.filtro-pet .dropdown .dropdown-filter a:hover{
+    color: #eef112;
+}
+
+.filtro-pet .filtro-esp:hover .dropdown-filter{
+    width: 80px;
+    height: 140px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .gallery-container{
     display: flex;
@@ -131,7 +192,7 @@ body{
     transition: .2s;
     border-radius: 20%;
     display: flex;
-    z-index: 2;
+    z-index: 0;
 }
 
 .overlay h1{

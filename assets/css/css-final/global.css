@@ -21,7 +21,7 @@ header {
     background-color: #4F200D;
     box-shadow: 0 2px 6px 2px #3d322d;
     position: fixed;
-    z-index: 4;
+    z-index: 6;
 }
 
 .nav-bar {
