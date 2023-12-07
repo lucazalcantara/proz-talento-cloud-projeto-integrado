@@ -92,35 +92,35 @@
     <main>
 
         <div class="filtro-pet">
-            <input type="text" placeholder="Busque o seu novo pet aqui!">
+            <input type="text" placeholder="Busque aqui por palavras-chaves...">
             <a href="#"><i class="bi bi-funnel"></i></a>
             <span>Filtrar por:</span>
             <div class="filtro-esp">
-                
-                <a href="#">Espécie</a>
                 <ul>
-                    <li class="dropdown">
+                    <li class="dropdown first">
+                        <a href="#">Espécie</a>
 
                         <div class="dropdown-filter">
                             <a href="#">
                                 <span class="drop-txt">Canina</span>
                             </a>
+
                             <a href="#">
                                 <span class="drop-txt">Felina</span>
                             </a>
+
                             <a href="#">
                                 <span class="drop-txt">Aviária</span>
                             </a>
+
                             <a href="#">
                                 <span class="drop-txt">Aquática</span>
                             </a>
                         </div>
                     </li>
-                </ul>
-                <!--  
-                <a href="#">Gênero</a>
-                <ul>
-                    <li class="dropdown">
+
+                    <li class="dropdown second">
+                        <a href="#">Gênero</a>
 
                         <div class="dropdown-filter">
                             <a href="#">
@@ -131,12 +131,25 @@
                             </a>
                         </div>
                     </li>
+
+                    <li class="dropdown third">
+                        <a href="#">Localização</a>
+
+                        <div class="dropdown-filter location">
+
+                            <div class="field-filter">
+                                <label class="label-location" for="estado">Estado:</label>
+                                <input type="text" class="input-location" name="estado">
+                                <label class="label-location" for="cidade">Cidade:</label>
+                                <input type="text" class="input-location" name="cidade">
+                                <div class="filter-button">
+                                    <button><a href="#">Filtrar</a></button>
+                                </div>  
+                            </div>
+
+                        </div>
+                    </li>
                 </ul>
-                              
-                <a href="#">Localização</a>
-                <a href="#">Porte</a>
-                <a href="#">Avançado<i class="bi bi-caret-down-fill"></i></a>
-                -->
             </div>
         </div>
         
@@ -213,6 +226,8 @@
             </a>
         </div>
     </main>
-    
 </body>
+
+<script src="../assets/js/painel-lateral.js"></script>
+
 </html>

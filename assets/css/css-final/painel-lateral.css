@@ -70,11 +70,16 @@ nav.menu-lateral:hover .txt-link{
     margin-left: 40px;
 }
 
-ul li.item-menu a .icon > i{
+nav.menu-lateral ul li.item-menu a .icon > i{
     font-size: 30px;
     margin-left: 10px; 
     transition: .4s
 }
+
+/*
+
+VERIFICAR A USABILIDADE DESSA ANIMAÇÃO:
+
 
 ul li.item-menu.ativo a .icon > i{
     color: #ecc92b;   
@@ -83,3 +88,5 @@ ul li.item-menu.ativo a .icon > i{
 ul li.item-menu.ativo a .txt-link{
     color: #ecc92b;
 }
+
+*/

@@ -1,15 +1,13 @@
 body{
-    background-color: #F6F1E9;
-    /*overflow: auto;*/
-   
+    background-color: #F6F1E9; 
 }
 
 .filtro-pet{
     position: absolute;
     display: flex;
-    margin-left: 220px;
+    margin-left: 320px;
     margin-top: 100px;
-    width: 850px;
+    width: 650px;
     height: 50px;
     background-color: #4F200D;
     border-radius: 30px;
@@ -20,7 +18,7 @@ body{
 .filtro-pet input{
     margin-left: 15px;
     margin-top: 10px;
-    width: 250px;
+    width: 200px;
     height: 30px;
     border-radius: 20px;
     outline: none;
@@ -69,27 +67,20 @@ body{
     margin-left: 60px;
 }
 
-.filtro-pet .filtro-esp i{
-    position: relative;
-    margin-left: 5px;
+.filtro-pet .filtro-esp .dropdown a{
+    margin: 0;
 }
 
 .filtro-pet li{
-    display: inline-block;
-}
-
-.filtro-pet li a{
-    display: inline-block;
-    padding: 0px;
+    display: inline-flex;
+    justify-content: start;
 }
 
 .filtro-pet .dropdown .dropdown-filter{
-    display: block;
-    margin: 0;
+    margin: 10px;
     margin-top: 1px;
-    margin-left: 3px;
+    margin-left: -60px;
     padding: 0;
-
     width: 80px;
     height: 0px;
     background-color: #4F200D;
@@ -108,21 +99,72 @@ body{
 }
 
 .filtro-pet .dropdown .dropdown-filter a:nth-child(1){
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
-.filtro-pet .dropdown .dropdown-filter a:hover{
-    color: #eef112;
+
+
+
+
+/*Filtro localização*/
+.filtro-pet .dropdown .location{
+    margin-left: -127px;
+    width: 200px;
+    height: 0px;
 }
 
-.filtro-pet .filtro-esp:hover .dropdown-filter{
+.filtro-pet .dropdown .location .field-filter{
+    margin-top: 30px;
+}
+
+.filtro-pet .dropdown .location .field-filter .label-location{
+    margin-left: 75px;
+    color: #fff;
+}
+
+.filtro-pet .dropdown .location .field-filter .input-location{
+    margin-left: 10px;
+    width: 180px;
+}
+
+.filtro-pet .dropdown .location .field-filter .filter-button button{
+    margin-left: 55px;
+    margin-top: 10px;
     width: 80px;
-    height: 140px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid #fff;
+    background-color: #4F200D;
+}
+
+.filtro-pet .dropdown .location .field-filter .filter-button a{
+    margin-left: 0px;
+    margin-top: 0px;
+    color: #fff;
+}
+
+.filtro-pet .dropdown .location .field-filter .filter-button button:hover{
+    background-color: #eef112;
 }
 
 
 
 
+
+.filtro-pet .filtro-esp .first:hover .dropdown-filter{
+    width: 80px;
+    height: 150px;
+}
+
+.filtro-pet .filtro-esp .second:hover .dropdown-filter{
+    width: 80px;
+    height: 95px;
+}
+
+.filtro-pet .filtro-esp .third:hover .dropdown-filter{
+    width: 200px;
+    height: 210px;
+}
 
 
 
