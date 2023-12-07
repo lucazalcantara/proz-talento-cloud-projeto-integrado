@@ -16,7 +16,7 @@
     position: absolute;
     width: 100px;
     height: 30px;
-    margin-top: 15px;
+    margin-top: 35px;
     margin-left: 680px;
     background-color: #4F200D;
     border-radius: 15px;
@@ -47,12 +47,24 @@
     border-radius: 50%;
 }
 
+.container .head-container .screen:hover p{
+    color: #eef112;
+}
+
+.container .head-container .screen:hover i{
+    color: #eef112;
+}
+
 .container .head-container .photo-icon i{
     position: absolute;
     margin-left: 280px;
     margin-top: 50px;
     font-size: 150px;
     color: #4F200D;
+}
+
+.container .head-container .photo-icon i:hover{
+    color: #eef112;
 }
 
 .container .head-container .photo-edit{
@@ -73,6 +85,9 @@
     font-size: 17px;
 }
 
+.container .head-container .photo-edit i:hover{
+    color: #eef112;
+}
 
 .container .profile-container{
     position: absolute;
@@ -86,5 +101,53 @@
     border: 3px solid #4F200D;
     overflow: hidden;
     border-radius: 40px;
+}
 
+.container .profile-container .nav-profile{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 53rem;
+    height: 70px;
+    margin-left: -54px;
+    margin-top: -55px;
+    background-color: #4F200D;
+}
+
+.container .profile-container .nav-profile a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.container .profile-container .nav-profile .underline{
+    margin-top: 3px;
+    margin-bottom: -5px;
+    width: 0px;
+    height: 4px;
+    border-radius: 60px;
+    background-color: #eef112;
+    transition: .4s;
+}
+
+.container .profile-container .nav-profile a:hover{
+    color: #eef112;
+}
+
+.container .profile-container .nav-profile .publicacoes:hover .underline{
+    width: 79px;
+}
+
+.container .profile-container .nav-profile .fotos:hover .underline{
+    width: 36px;
+}
+
+.container .profile-container .nav-profile .amigos:hover .underline{
+    width: 50px;
+}
+
+.container .profile-container .nav-profile .sobre:hover .underline{
+    width: 38px;
 }
