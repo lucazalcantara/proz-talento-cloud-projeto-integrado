@@ -1,0 +1,90 @@
+.container .head-container{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 260px;
+    padding: 53px;
+    width: 53rem;
+    height: 18rem;
+    box-sizing: border-box;
+    background-color: #e0d0ca;
+    border: 3px solid #4F200D;
+    overflow: hidden;
+    border-radius: 40px;
+}
+
+.container .head-container .screen{
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    margin-top: 15px;
+    margin-left: 680px;
+    background-color: #4F200D;
+    border-radius: 15px;
+    
+
+
+}
+
+.container .head-container .screen a{
+    display: flex;
+    text-decoration: none;
+}
+
+.container .head-container .screen p{
+    position: relative;
+    color: #fff;
+    top: 5px;
+    left: 20px;
+}
+
+.container .head-container .screen-edit{
+    position: relative;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    top: 5px;
+    left: 35px;
+    border-radius: 50%;
+}
+
+.container .head-container .photo-icon i{
+    position: absolute;
+    margin-left: 280px;
+    margin-top: 50px;
+    font-size: 150px;
+    color: #4F200D;
+}
+
+.container .head-container .photo-edit{
+    position: absolute;
+    background-color: #4F200D;
+    width: 30px;
+    height: 30px;
+    margin-top: 180px;
+    margin-left: 410px;
+    border-radius: 50%;
+}
+
+.container .head-container .photo-edit i{
+    position: relative;
+    top: 3px;
+    padding: 7px;
+    color: #fff;
+    font-size: 17px;
+}
+
+
+.container .profile-container{
+    position: absolute;
+    margin-top: 300px;
+    margin-left: 260px;
+    padding: 53px;
+    width: 53rem;
+    height: 100rem;
+    box-sizing: border-box;
+    background-color: #e0d0ca;
+    border: 3px solid #4F200D;
+    overflow: hidden;
+    border-radius: 40px;
+
+}
