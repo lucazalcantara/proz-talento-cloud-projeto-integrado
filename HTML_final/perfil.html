@@ -31,12 +31,12 @@
 
             <ul>
                 <li class="profile-button">
-                    <a href="#">
+                    <a href="perfil.html">
                         <span class="icon"><i class="bi bi-person-circle"></i></span>
                     </a>
 
                     <div class="dropdown-menu">
-                        <a href="#">
+                        <a href="perfil.html">
                             <i class="bi bi-person-fill"><span class="drop-txt">  Meu perfil</span></i>
                         </a>
                         <a href="#">
@@ -105,28 +105,176 @@
 
             <div class="profile-container">
                 <div class="nav-profile">
-                    <div class="field publicacoes">
-                        <a href="#">Publicações</a>
+                    <div class="field publicacoes" onclick="showHide('#publications')">
+                        <a>Publicações</a>
                         <div class="underline"></div>
                     </div>
-                    <div class="field fotos">
-                        <a href="#">Fotos</a>
+                    <div class="field fotos" onclick="showHide('#photos')">
+                        <h1>Fotos</h1>
                         <div class="underline"></div>
                     </div>
-                    <div class="field amigos">
-                        <a href="#">Amigos</a>
+                    <div class="field amigos" onclick="showHide('#friends')">
+                        <h1>Amigos</h1>
                         <div class="underline"></div>
                     </div>
-                    <div class="field sobre">
-                        <a href="#">Sobre</a>
+                    <div class="field sobre" onclick="showHide('#about')">
+                        <h1>Sobre</h1>
                         <div class="underline"></div>
                     </div>
                 </div>
+            
+                <ul>
+                    <li id="publications" class="item-perfil">
+                        <div class="my-post">
+                            <section class="hidden">
+                                <div class="box-text">
+                                    <a href="#"><i class="bi bi-person-circle"></i> Carlos Marttiolli</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                </div>
+
+                                <img src="../assets/img/dog-3277416_1280.jpg">
+
+                            </section>
+
+                            <section class="hidden">
+                                <div class="box-text">
+                                    <a href="#"><i class="bi bi-person-circle"></i> Carlos Marttiolli</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                </div>
+
+                                <img src="../assets/img/dog-3277416_1280.jpg">
+
+                            </section>
+
+                            <section class="hidden">
+                                <div class="box-text">
+                                    <a href="#"><i class="bi bi-person-circle"></i> Carlos Marttiolli</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                </div>
+
+                                <img src="../assets/img/dog-3277416_1280.jpg">
+
+                            </section>
+                        </div>
+                    </li>
+
+                    <li id="photos" class="item-perfil">
+                        <div class="my-pics">
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+                            <p>teste fotos</p>
+
+                        </div>
+                    </li>
+
+                    <li id="friends" class="item-perfil">
+                        <div class="my-friends">
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                            <p>teste amigos</p>
+                        </div>
+                    </li>
+
+                    <li id="about" class="item-perfil">
+                        <div class="about me">
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                            <p>teste sobre</p>
+                        </div>
+                    </li>
+                </ul>
+
             </div>
+
         </div>
     </main>
 </body>
 
 <script src="../assets/js/painel-lateral.js"></script>
+<script src="../assets/js/perfil.js"></script>
 
 </html>
+
+
+
+
+
+
+
+
+<!-- 
+<div class="nav-profile">
+    <div class="field publicacoes">
+        <a href="#" onclick="alternar('publications')">Publicações</a>
+        <div class="underline"></div>
+    </div>
+    <div class="field fotos">
+        <a href="#" onclick="alternar('photos')">Fotos</a>
+        <div class="underline"></div>
+    </div>
+    <div class="field amigos">
+        <a href="#" onclick="alternar('friends')">Amigos</a>
+        <div class="underline"></div>
+    </div>
+    <div class="field sobre">
+        <a href="#" onclick="alternar('about')">Sobre</a>
+        <div class="underline"></div>
+    </div>
+</div> -->
+
+
+
+                <!-- <div class="paginas">
+                    <div id="publications" class="item-perfil">
+                        <div class="my-post">
+                            <section class="hidden">
+                                <div class="box-text">
+                                    <a href="#"><i class="bi bi-person-circle"></i> Carlos Marttiolli</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                </div>
+            
+                                <img src="../assets/img/dog-3277416_1280.jpg">
+            
+                            </section>
+            
+                            <section class="hidden">
+                                <div class="box-text">
+                                    <a href="#"><i class="bi bi-person-circle"></i> Carlos Marttiolli</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                </div>
+            
+                                <img src="../assets/img/dog-3277416_1280.jpg">
+            
+                            </section>
+            
+                            <section class="hidden">
+                                <div class="box-text">
+                                    <a href="#"><i class="bi bi-person-circle"></i> Carlos Marttiolli</a>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur rem officia praesentium dolorum, tempora molestias nam veniam velit adipisci officiis doloremque. Eveniet in voluptates explicabo amet itaque ipsum, modi eos.</p>
+                                </div>
+            
+                                <img src="../assets/img/dog-3277416_1280.jpg">
+            
+                            </section>
+                        </div>
+                    </div>
+                </div> -->
+                

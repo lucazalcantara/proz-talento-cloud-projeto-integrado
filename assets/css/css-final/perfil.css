@@ -95,7 +95,7 @@
     margin-left: 260px;
     padding: 53px;
     width: 53rem;
-    height: 100rem;
+    height: 130rem;
     box-sizing: border-box;
     background-color: #e0d0ca;
     border: 3px solid #4F200D;
@@ -107,7 +107,7 @@
     position: relative;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     width: 53rem;
     height: 70px;
@@ -141,7 +141,7 @@
 }
 
 .container .profile-container .nav-profile .fotos:hover .underline{
-    width: 36px;
+    width: 35px;
 }
 
 .container .profile-container .nav-profile .amigos:hover .underline{
@@ -150,4 +150,103 @@
 
 .container .profile-container .nav-profile .sobre:hover .underline{
     width: 38px;
+}
+
+
+
+
+
+/*ANIMAÇÃO DE TROCA DE TELAS MENU-PERFIL*/
+
+.item-perfil{
+    display: grid;
+}
+
+/* .item-perfil .ativo{
+    display: grid;
+} */
+
+
+/* .item-perfil:nth-child(2){
+    display: grid;
+}
+
+.item-perfil:nth-child(3){
+    display: grid;
+}
+
+.item-perfil:nth-child(4){
+    display: grid;
+} */
+
+
+/*PUBLICAÇÕES*/
+
+.hidden{
+    display: grid;
+    place-items: center;
+    align-items: center;
+}
+
+/*Cabeçalho do post*/
+.my-post .box-text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+.my-post .box-text a{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: #4F200D;
+    text-decoration: none;
+}
+
+.my-post .box-text p{
+    margin-left: 0px;
+    margin-right: 60px;
+    font-size: 20px;
+    color: #000;
+    word-wrap: nowrap;
+}
+
+
+/*Imagem do post*/
+.my-post .hidden img{
+    height: 410px;
+    width: 430px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    border-radius: 20px;
+}
+
+
+/*Botões do post*/
+.my-post .buttons button{
+    position: relative;
+    background: none;
+    color: #ffffff;
+    cursor: pointer;
+    top: -70px;
+    border-radius: 50%;
+    border: none;
+    width: 45px;
+    height: 45px;
+    transition: .2s;
+    background-color: #4F200D;
+    margin: 5px;
+}
+
+.my-post .buttons i{
+    font-size: 20px;
+    color: #fff
+}
+
+.my-post .buttons button:hover{
+    background-color: #eef112;
+}
+
+.my-post .buttons button:hover i{
+    color: #000;
 }

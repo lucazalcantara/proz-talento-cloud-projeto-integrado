@@ -76,17 +76,12 @@ nav.menu-lateral ul li.item-menu a .icon > i{
     transition: .4s
 }
 
-/*
 
-VERIFICAR A USABILIDADE DESSA ANIMAÇÃO:
-
-
-ul li.item-menu.ativo a .icon > i{
+.item-menu.ativo a .icon > i{
     color: #ecc92b;   
 }
 
-ul li.item-menu.ativo a .txt-link{
+.item-menu.ativo a .txt-link{
     color: #ecc92b;
 }
 
-*/
