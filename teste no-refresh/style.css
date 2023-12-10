@@ -4,6 +4,11 @@ section.container{
     cursor: pointer;
 }
 
+.produto{
+    border: 2px solid #000;
+    padding: 40px;
+}
+
 section.container div.descricao-produto{
     height: 0px;
     overflow: hidden;

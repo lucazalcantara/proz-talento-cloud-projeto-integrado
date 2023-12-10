@@ -1,0 +1,34 @@
+
+.seletores-aba{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+
+}
+
+.aba a{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    cursor: pointer;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: space-evenly;
+    
+}
+
+.perfil-conteudo p{
+    color: blue;
+}
+
+.perfil-conteudo{
+    display: none;
+    height: 200px;
+    
+}
+
+.perfil-conteudo.ativo{
+    display: flex;
+    height: 150px;
+}

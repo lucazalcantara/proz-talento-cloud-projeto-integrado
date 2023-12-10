@@ -1,9 +1,3 @@
-
-
-//TENTE USAR O ForEach NESSA PORCARIA.
-
-
-
 function logar(){
     var email = document.getElementById('email').value;
     var senha = document.getElementById('senha').value;
