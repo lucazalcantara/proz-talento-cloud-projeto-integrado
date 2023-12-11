@@ -1,3 +1,5 @@
+
+/*HEAD-CONTAINER*/
 .container .head-container{
     position: absolute;
     margin-top: 0px;
@@ -20,9 +22,6 @@
     margin-left: 680px;
     background-color: #4F200D;
     border-radius: 15px;
-    
-
-
 }
 
 .container .head-container .screen a{
@@ -89,6 +88,24 @@
     color: #eef112;
 }
 
+
+
+
+
+/*PROFILE-CONTAINER*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 .container .profile-container{
     position: absolute;
     margin-top: 300px;
@@ -103,10 +120,10 @@
     border-radius: 40px;
 }
 
-.container .profile-container .nav-profile{
+.container .profile-container .abas{
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     width: 53rem;
@@ -114,70 +131,59 @@
     margin-left: -54px;
     margin-top: -55px;
     background-color: #4F200D;
+
 }
 
-.container .profile-container .nav-profile a{
+.profile-container .abas .abas__radio{
+    display: none;
+}
+
+.container .profile-container .abas .abas__label{
     text-decoration: none;
     font-size: 20px;
     color: #fff;
+    cursor: pointer;
+    padding-top: 20px;
+   padding-bottom: 10px;
+    cursor: pointer;
 }
 
-.container .profile-container .nav-profile .underline{
-    margin-top: 3px;
-    margin-bottom: -5px;
-    width: 0px;
-    height: 4px;
-    border-radius: 60px;
-    background-color: #eef112;
-    transition: .4s;
-}
-
-.container .profile-container .nav-profile a:hover{
+.profile-container .abas .abas__label:hover{
     color: #eef112;
 }
 
-.container .profile-container .nav-profile .publicacoes:hover .underline{
-    width: 79px;
+.profile-container .abas .abas__conteudo{
+    order: 1;
+    width: 100%;
+    display: none;
 }
 
-.container .profile-container .nav-profile .fotos:hover .underline{
-    width: 35px;
+.profile-container .abas .abas__conteudo p{
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
-.container .profile-container .nav-profile .amigos:hover .underline{
-    width: 50px;
+.abas__radio:checked+.abas__label{
+    border-bottom: 2px solid #eef112;
 }
 
-.container .profile-container .nav-profile .sobre:hover .underline{
-    width: 38px;
-}
-
-
-
-
-
-/*ANIMAÇÃO DE TROCA DE TELAS MENU-PERFIL*/
-
-.item-perfil{
+.abas__radio:checked+.abas__label+.abas__conteudo{
     display: grid;
 }
 
-/* .item-perfil .ativo{
-    display: grid;
-} */
 
 
-/* .item-perfil:nth-child(2){
-    display: grid;
-}
 
-.item-perfil:nth-child(3){
-    display: grid;
-}
 
-.item-perfil:nth-child(4){
-    display: grid;
-} */
+
+
+
+
+
+
+
+
+
 
 
 /*PUBLICAÇÕES*/

@@ -8,72 +8,25 @@
     
 </head>
 <body>
-    <main>
-        <section class="container">
-            <div class="produto" onclick="showHide('#produto1')">
-                <h1>primeira</h1>
-                <div class="descricao-produto" id="produto1">
+    <div class="tabs">
+        <input type="radio" class="tabs__radio" name="tabs__example" id="tab1" checked>
+        <label for="tab1" class="tabs__label">Tab #1</label>
+        <div class="tabs__content">
+            conteúdo da primeira aba
+        </div>
 
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque sem at enim euismod 
-                        iaculis. Phasellus sem dui, varius vitae consequat sed, ornare sed lectus. Vestibulum vel sodales sapien, 
-                        sed pulvinar velit. In sem magna, fringilla sed sapien eget, ultrices ullamcorper dui. Phasellus gravida 
-                        commodo nisl, et consectetur dui sagittis eget. Praesent ultrices mauris quis semper gravida. In imperdiet 
-                        in mi sodales tincidunt. Suspendisse imperdiet tortor eros, ut egestas odio viverra ut. Mauris venenatis 
-                        sem in urna interdum convallis. Morbi consectetur, massa vel rhoncus pulvinar, nibh nulla sollicitudin 
-                        libero, ut placerat massa arcu ut lacus. Vestibulum aliquet sodales diam. Sed quis aliquet nibh. Nam quam 
-                        libero, lobortis et lorem a, consequat malesuada velit. Nam turpis ex, facilisis eu mattis eget, hendrerit 
-                        vitae ante. In in odio vel velit mollis tincidunt et eu lorem.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="produto"  onclick="showHide('#produto02')">
-                <h1>segunda</h1>
-                <div class="descricao-produto" id="produto02">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque sem at enim euismod 
-                    iaculis. Phasellus sem dui, varius vitae consequat sed, ornare sed lectus. Vestibulum vel sodales sapien, 
-                    sed pulvinar velit. In sem magna, fringilla sed sapien eget, ultrices ullamcorper dui. Phasellus gravida 
-                    commodo nisl, et consectetur dui sagittis eget. Praesent ultrices mauris quis semper gravida. In imperdiet 
-                    in mi sodales tincidunt. Suspendisse imperdiet tortor eros, ut egestas odio viverra ut. Mauris venenatis 
-                    sem in urna interdum convallis. Morbi consectetur, massa vel rhoncus pulvinar, nibh nulla sollicitudin 
-                    libero, ut placerat massa arcu ut lacus. Vestibulum aliquet sodales diam. Sed quis aliquet nibh. Nam quam 
-                    libero, lobortis et lorem a, consequat malesuada velit. Nam turpis ex, facilisis eu mattis eget, hendrerit 
-                    vitae ante. In in odio vel velit mollis tincidunt et eu lorem.</p>
-                </div>
-            </div>
-            <div class="produto" onclick="showHide('#produto03')">
-                <h1>terceira</h1>
-                <div class="descricao-produto" id="produto03">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque sem at enim euismod 
-                    iaculis. Phasellus sem dui, varius vitae consequat sed, ornare sed lectus. Vestibulum vel sodales sapien, 
-                    sed pulvinar velit. In sem magna, fringilla sed sapien eget, ultrices ullamcorper dui. Phasellus gravida 
-                    commodo nisl, et consectetur dui sagittis eget. Praesent ultrices mauris quis semper gravida. In imperdiet 
-                    in mi sodales tincidunt. Suspendisse imperdiet tortor eros, ut egestas odio viverra ut. Mauris venenatis 
-                    sem in urna interdum convallis. Morbi consectetur, massa vel rhoncus pulvinar, nibh nulla sollicitudin 
-                    libero, ut placerat massa arcu ut lacus. Vestibulum aliquet sodales diam. Sed quis aliquet nibh. Nam quam 
-                    libero, lobortis et lorem a, consequat malesuada velit. Nam turpis ex, facilisis eu mattis eget, hendrerit 
-                    vitae ante. In in odio vel velit mollis tincidunt et eu lorem.</p>
-                </div>
-            </div>
-            <div class="produto" onclick="showHide('#produto04')">
-                <h1>quarta</h1>
-                <div class="descricao-produto" id="produto04">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus pellentesque sem at enim euismod 
-                    iaculis. Phasellus sem dui, varius vitae consequat sed, ornare sed lectus. Vestibulum vel sodales sapien, 
-                    sed pulvinar velit. In sem magna, fringilla sed sapien eget, ultrices ullamcorper dui. Phasellus gravida 
-                    commodo nisl, et consectetur dui sagittis eget. Praesent ultrices mauris quis semper gravida. In imperdiet 
-                    in mi sodales tincidunt. Suspendisse imperdiet tortor eros, ut egestas odio viverra ut. Mauris venenatis 
-                    sem in urna interdum convallis. Morbi consectetur, massa vel rhoncus pulvinar, nibh nulla sollicitudin 
-                    libero, ut placerat massa arcu ut lacus. Vestibulum aliquet sodales diam. Sed quis aliquet nibh. Nam quam 
-                    libero, lobortis et lorem a, consequat malesuada velit. Nam turpis ex, facilisis eu mattis eget, hendrerit 
-                    vitae ante. In in odio vel velit mollis tincidunt et eu lorem.</p>
-                </div>
-            </div>
-        
-        </section>
-    </main>
-    <script src="script.js"></script>
+        <input type="radio" class="tabs__radio" name="tabs__example" id="tab2">
+        <label for="tab2" class="tabs__label">Tab #2</label>
+        <div class="tabs__content">
+            conteúdo da segunda aba
+        </div>
+
+        <input type="radio" class="tabs__radio" name="tabs__example" id="tab3">
+        <label for="tab3" class="tabs__label">Tab #3</label>
+        <div class="tabs__content">
+            conteúdo da terceira aba
+        </div>
+    </div>
 </body>
 
 </html>
