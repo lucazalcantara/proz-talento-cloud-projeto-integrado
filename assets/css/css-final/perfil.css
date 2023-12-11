@@ -93,19 +93,6 @@
 
 
 /*PROFILE-CONTAINER*/
-
-
-
-
-
-
-
-
-
-
-
-
-
 .container .profile-container{
     position: absolute;
     margin-top: 300px;
@@ -175,26 +162,16 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*PUBLICAÇÕES*/
-
 .hidden{
     display: grid;
     place-items: center;
     align-items: center;
 }
 
+
 /*Cabeçalho do post*/
+
 .my-post .box-text{
     display: flex;
     flex-direction: column;
@@ -219,6 +196,7 @@
 
 
 /*Imagem do post*/
+
 .my-post .hidden img{
     height: 410px;
     width: 430px;
@@ -229,6 +207,7 @@
 
 
 /*Botões do post*/
+
 .my-post .buttons button{
     position: relative;
     background: none;
@@ -255,4 +234,49 @@
 
 .my-post .buttons button:hover i{
     color: #000;
+}
+
+
+
+
+
+/*FOTOS*/
+.container-fotos{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2vw;
+    padding: 0 2vw;
+    padding-top: 40px;
+}
+
+.gallery-fotos{
+    width: 210px;
+    height: 210px;
+    border: 2px solid #fff;
+    box-shadow: 10px 5px 9px #0006;
+    flex-grow: 1;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+
+.gallery-fotos:hover{
+    border: none;
+
+}
+
+.gallery-fotos img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;  
+}
+
+.gallery-fotos .overlay{
+    display: none;
 }
