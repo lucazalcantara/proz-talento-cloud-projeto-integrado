@@ -147,11 +147,12 @@ section:nth-child(1){
 
 
 /*SEÇÃO DE SHORTS*/
-section h2{
+.hidden h2{
     text-align: center;
     font-size: 30px;
     margin-left: -725px;
     margin-bottom: 15px;
+    color: #4F200D;
 }
 
 .shorts{
@@ -159,22 +160,66 @@ section h2{
     gap: 20px;
 }
 
-.shorts .hidden img{
-    background-color: #fff;
-    border-radius: 20px;
-    margin: 2px;
+.shorts .shorts-video{
+    width: 280px;
+    height: 430px;
+    box-shadow: 3px 5px 10px #000;
+    border-radius: 70px;
+}
+
+.shorts .shorts-video video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 70px;
+}
+
+.shorts .shorts-video video:hover{
+    cursor: pointer;
+}
+
+.shorts .shorts-video:hover .shorts-autor{
+    cursor: pointer;
+    display: flex;
+}
+
+.shorts .shorts-autor{
     width: 250px;
-    height: 400px;
+    height: 80px;
+    display: none;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: top;
+    margin-left: 30px;
+    margin-top: -80px;
 }
 
-.shorts:nth-child(2){
-    transition-delay: 400ms;
+.shorts .foto-autor{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #eef112;
+    border-radius: 50%;
 }
 
-.shorts:nth-child(3){
-    transition-delay: 700ms;
+.shorts .foto-autor img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-.shorts:nth-child(4){
-    transition-delay: 1000ms;
+.shorts .shorts-autor h1{
+    font-size: 20px;
+    padding-left: 5px;
+    margin-top: 8px;
+    color: #eef112;
+    font-weight: normal;
+}
+
+.shorts .shorts-autor p{
+    font-size: 15px;
+    color: #eef112;
+    padding-left: 45px;
+    margin-top: -25px;
+    font-weight: normal;
 }
