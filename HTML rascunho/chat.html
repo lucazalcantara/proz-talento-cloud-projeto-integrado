@@ -3,11 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../assets/css/css-testes/chat.css">
+    <link rel="stylesheet" href="../assets/css/css-testes/chat-teste.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>chat-teste</title>
 </head>
 <body>
+    <!-- <section class="container-window">
+        <section class="section-title">
+            <button onclick="showHideWindow()" class="action-button">Abrir janela</button>
+        </section>
+        <section class="window-section hide">
+            <div class="window">
+                <div class="nome-amigo">Ana Claudia</div>
+                <div class="campo-mensagens">
+                    <div class="add-mensagem">
+                        <input type="text" placeholder="Escreva aqui...">
+                        <button class="enviar">Mandar</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section> -->
+
     <div class="container-chat">
         <div class="chat">
             <a href="#"> 
@@ -18,7 +35,7 @@
             <div class="container-contacts">
 
                 <div class="box-contacts">
-                    <a href="#">
+                    <a href="#" onclick="showHideWindow('window01')">
                         <div class="contacts">
                             <div class="foto-contacts">
                                 <img src="../assets/img/pagina perfil/girl.jpg" alt="Ana Claudia Soares">
@@ -80,5 +97,47 @@
             </div>
         </div>
     </div>
+
+    <div id="window01" class="chat-window">
+        <div class="title-window" onclick="minMaxWindow('window01')">
+            Ana Claudia Soares
+        </div>
+        <div class="message-window">
+            <div class="message-send">
+                <input type="text" placeholder="Escreva sua mensagem aqui...">
+                    <div class="send-icon">
+                        <i class="bi bi-caret-right"></i>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../assets/js/chat-teste.js"></script>
 </body>
 </html>
+
+
+
+<!--EXEMPLO BASE-->
+
+<!-- <section class="container">
+    <section class="section-title">
+        <button onclick="showHideUsers()" class="btn btn-primary">Users</button>
+    </section>
+    <section class="users-section hide">
+        <div class="user">
+            <div class="username">Vicky</div>
+            <div class="avatar">
+                <img src="../assets/img/pooh-01.png" alt="User">
+            </div>
+        </div>
+        <div class="user">
+            <div class="username">Aadhya</div>
+            <div class="avatar">
+                <img src="../assets/img/pooh-02.png" alt="User">
+            </div>
+        </div>
+    </section>
+</section> -->
