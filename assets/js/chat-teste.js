@@ -1,9 +1,9 @@
-let windowSection = document.querySelector(".chat-window");
+var windowSection = [...document.querySelectorAll('.chat-window')];
 
-function showHideWindow(){
-    windowSection.classList.toggle("hide");
+function showHideWindow(s){
+    windowSection[s].classList.toggle('hide');
 }
 
-function minMaxWindow(){
-    windowSection.classList.toggle("minimize");
+function minMaxWindow(m){
+    windowSection[m].classList.toggle('minimize');
 }

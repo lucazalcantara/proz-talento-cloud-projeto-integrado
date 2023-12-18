@@ -6,6 +6,10 @@
     
 }
 
+
+
+
+/*CHAT*/
 .chat{
     position: fixed;
     width: 250px;
@@ -87,7 +91,14 @@
 }
 
 
+/*Janela chat individual*/
 
+.container-window{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 270px;
+    
+}
 
 .chat-window{
     width: 200px;
@@ -95,7 +106,6 @@
     background-color: #4F200D;
     border-radius: 10px 10px 0px 0px;
     margin-top: 300px;
-    margin-left: 850px;
     padding-left: 5px;
     padding-right: 5px;
 }

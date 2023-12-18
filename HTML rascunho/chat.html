@@ -8,34 +8,21 @@
     <title>chat-teste</title>
 </head>
 <body>
-    <!-- <section class="container-window">
-        <section class="section-title">
-            <button onclick="showHideWindow()" class="action-button">Abrir janela</button>
-        </section>
-        <section class="window-section hide">
-            <div class="window">
-                <div class="nome-amigo">Ana Claudia</div>
-                <div class="campo-mensagens">
-                    <div class="add-mensagem">
-                        <input type="text" placeholder="Escreva aqui...">
-                        <button class="enviar">Mandar</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </section> -->
 
     <div class="container-chat">
+
         <div class="chat">
+
             <a href="#"> 
                 <span class="icon"><i class="bi bi-chat-fill"></i></span>
                 <span class="title-chat">Bate-papo</span>
             </a>
 
+
             <div class="container-contacts">
 
-                <div class="box-contacts">
-                    <a href="#" onclick="showHideWindow('window01')">
+                <div class="box-contacts" onclick="showHideWindow('0')">
+                    <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
                                 <img src="../assets/img/pagina perfil/girl.jpg" alt="Ana Claudia Soares">
@@ -43,10 +30,9 @@
                             <h1 class="nome-contacts">Ana Claudia Soares</h1>
                         </div>
                     </a>
-
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('1')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -98,16 +84,34 @@
         </div>
     </div>
 
-    <div id="window01" class="chat-window">
-        <div class="title-window" onclick="minMaxWindow('window01')">
-            Ana Claudia Soares
+
+    <div class="container-window">
+
+        <div id="window01" class="chat-window">
+            <div class="title-window" onclick="minMaxWindow('0')">
+                Ana Claudia Soares
+            </div>
+            <div class="message-window">
+                <div class="message-send">
+                    <input type="text" placeholder="Escreva sua mensagem aqui...">
+                        <div class="send-icon">
+                            <i class="bi bi-caret-right"></i>
+                        </div>
+                </div>
+            </div>
         </div>
-        <div class="message-window">
-            <div class="message-send">
-                <input type="text" placeholder="Escreva sua mensagem aqui...">
-                    <div class="send-icon">
-                        <i class="bi bi-caret-right"></i>
-                    </div>
+
+        <div id="window 02" class="chat-window">
+            <div class="title-window" onclick="minMaxWindow('1')">
+                Bruno Coelho Pires
+            </div>
+            <div class="message-window">
+                <div class="message-send">
+                    <input type="text" placeholder="Escreva sua mensagem aqui...">
+                        <div class="send-icon">
+                            <i class="bi bi-caret-right"></i>
+                        </div>
+                </div>
             </div>
         </div>
     </div>
