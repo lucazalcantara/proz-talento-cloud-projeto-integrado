@@ -1,6 +1,204 @@
 /*CHAT*/
 
-@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100&display=swap');
+.container-chat{
+    position: fixed;
+    flex-direction: row-reverse;
+    z-index: 1;
+    width: 100%;
+    height: 0;
+    display: grid;
+
+}
+
+.chat{
+    width: 250px;
+    height: 350px;
+    margin-top: 270px;
+    margin-left: 1097px;
+    background-color: #4F200D;
+    border-radius: 10px 10px 0px 0px;
+    display: flex;
+    justify-content: center;
+    padding-top: 0px;
+    cursor: pointer;
+}
+
+/* .chat:hover{
+    height: 350px;
+    margin-top: 270px;
+} */
+
+.chat a{
+    position: absolute;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    height: 55px;
+    margin-top: 5px;    
+}
+
+.chat .container-contacts{
+    /* position: fixed; */
+    margin-top: 25px;
+    width: 235px;
+    height: 305px;
+    display: grid;
+    padding-top: 10px;
+    
+}
+
+.chat .container-contacts .box-contacts .contacts{
+    position: relative;
+    width: 235px;
+    height: 50px;
+    border: 2px solid #4F200D;  
+    background-color: #F6F1E9;
+    border-radius: 10px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-left: 4px;  
+    text-decoration: none;
+}
+
+.chat .container-contacts .box-contacts .contacts:hover{
+    background-color: #fff;
+    border: none;
+}
+
+.chat .container-contacts .contacts .foto-contacts{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid rgb(10, 168, 10);
+}
+
+.chat .container-contacts .contacts .foto-contacts img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.chat .container-contacts .contacts h1{
+    font-size: 20px;
+    color: #4F200D;
+    padding-left: 5px;
+    
+}
+
+
+/*Janela chat individual*/
+
+.container-window{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 265px;
+    gap: 4px;
+    margin-top: 0px;
+}
+
+.chat-window{
+    width: 200px;
+    height: 288px;
+    background-color: #4F200D;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: -296px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.hide{
+    display: none;
+}
+
+.minimize{
+    margin-top: -40px;
+}
+
+.title-window{
+    width: 100%;
+    height: 30px;
+    background-color: #4F200D;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding-top: 5px;
+    cursor: pointer;    
+}
+
+.message-window{
+    width: 100%;
+    height: 87%;
+    background-color: #F6F1E9;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    
+
+}
+
+.message-send{
+    width: 100%;
+    height: 30px;
+    background-color: #4F200D;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 3px;
+}
+
+.message-send input{
+    width: 157px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+}
+
+.send-icon{
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.send-icon i{
+    font-size: 20px;
+    color: #fff;
+}
+
+.send-icon:hover{
+    border: 2px solid #eef112;
+    background-color: #eef112;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Open+Sans:wght@300;400;700&family=Roboto:wght@100&display=swap');
 
 .chat{
     position: fixed;
@@ -79,4 +277,4 @@
     font-size: 20px;
     color: #4F200D;
     padding-left: 5px;
-}
+} */

@@ -89,15 +89,18 @@
     </nav>
 
     <div class="container-chat">
+
         <div class="chat">
+
             <a href="#"> 
                 <span class="icon"><i class="bi bi-chat-fill"></i></span>
                 <span class="title-chat">Bate-papo</span>
             </a>
 
+
             <div class="container-contacts">
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('0')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -106,10 +109,9 @@
                             <h1 class="nome-contacts">Ana Claudia Soares</h1>
                         </div>
                     </a>
-
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('1')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -121,7 +123,7 @@
 
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('2')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -133,7 +135,7 @@
 
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('3')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -145,7 +147,7 @@
 
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('4')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -157,6 +159,82 @@
 
                 </div>
 
+            </div>
+        </div>
+    
+    
+
+        
+        <div class="container-window">
+
+            <div class="chat-window hide">
+                <div class="title-window" onclick="minMaxWindow('0')">
+                    Ana Claudia Soares
+                </div>
+                <div class="message-window">
+                    <div class="message-send">
+                        <input type="text" placeholder="Escreva sua mensagem aqui...">
+                            <div class="send-icon">
+                                <i class="bi bi-caret-right"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-window hide">
+                <div class="title-window" onclick="minMaxWindow('1')">
+                    Bruno Coelho Pires
+                </div>
+                <div class="message-window">
+                    <div class="message-send">
+                        <input type="text" placeholder="Escreva sua mensagem aqui...">
+                            <div class="send-icon">
+                                <i class="bi bi-caret-right"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-window hide">
+                <div class="title-window" onclick="minMaxWindow('2')">
+                    Gabriela Assunção Dias
+                </div>
+                <div class="message-window">
+                    <div class="message-send">
+                        <input type="text" placeholder="Escreva sua mensagem aqui...">
+                            <div class="send-icon">
+                                <i class="bi bi-caret-right"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-window hide">
+                <div class="title-window" onclick="minMaxWindow('3')">
+                    Cristina Vieira Goulart
+                </div>
+                <div class="message-window">
+                    <div class="message-send">
+                        <input type="text" placeholder="Escreva sua mensagem aqui...">
+                            <div class="send-icon">
+                                <i class="bi bi-caret-right"></i>
+                            </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-window hide">
+                <div class="title-window" onclick="minMaxWindow('4')">
+                    Joice Tavares Cardoso
+                </div>
+                <div class="message-window">
+                    <div class="message-send">
+                        <input type="text" placeholder="Escreva sua mensagem aqui...">
+                            <div class="send-icon">
+                                <i class="bi bi-caret-right"></i>
+                            </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -274,14 +352,15 @@
         </div>
     </section>
 
-<!--
-    <footer class="rodape">
-        <p>&copy; ConnectPet 2023</p>
-    </footer>
--->
+    <!--
+        <footer class="rodape">
+            <p>&copy; ConnectPet 2023</p>
+        </footer>
+    -->
     
 </body>
 
+<script src="../assets/js/chat.js"></script>
 <script src="../assets/js/painel-lateral.js"></script>
 <script src="../assets/js/scroll-animation.js"></script>
 
