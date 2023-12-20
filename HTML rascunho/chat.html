@@ -44,7 +44,7 @@
 
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('2')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -56,7 +56,7 @@
 
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('3')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -68,7 +68,7 @@
 
                 </div>
 
-                <div class="box-contacts">
+                <div class="box-contacts" onclick="showHideWindow('4')">
                     <a href="#">
                         <div class="contacts">
                             <div class="foto-contacts">
@@ -87,7 +87,7 @@
 
     <div class="container-window">
 
-        <div id="window01" class="chat-window">
+        <div class="chat-window hide">
             <div class="title-window" onclick="minMaxWindow('0')">
                 Ana Claudia Soares
             </div>
@@ -101,9 +101,51 @@
             </div>
         </div>
 
-        <div id="window 02" class="chat-window">
+        <div class="chat-window hide">
             <div class="title-window" onclick="minMaxWindow('1')">
                 Bruno Coelho Pires
+            </div>
+            <div class="message-window">
+                <div class="message-send">
+                    <input type="text" placeholder="Escreva sua mensagem aqui...">
+                        <div class="send-icon">
+                            <i class="bi bi-caret-right"></i>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-window hide">
+            <div class="title-window" onclick="minMaxWindow('2')">
+                Gabriela Assunção Dias
+            </div>
+            <div class="message-window">
+                <div class="message-send">
+                    <input type="text" placeholder="Escreva sua mensagem aqui...">
+                        <div class="send-icon">
+                            <i class="bi bi-caret-right"></i>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-window hide">
+            <div class="title-window" onclick="minMaxWindow('3')">
+                Cristina Vieira Goulart
+            </div>
+            <div class="message-window">
+                <div class="message-send">
+                    <input type="text" placeholder="Escreva sua mensagem aqui...">
+                        <div class="send-icon">
+                            <i class="bi bi-caret-right"></i>
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="chat-window hide">
+            <div class="title-window" onclick="minMaxWindow('4')">
+                Joice Tavares Cardoso
             </div>
             <div class="message-window">
                 <div class="message-send">
@@ -123,25 +165,3 @@
 </html>
 
 
-
-<!--EXEMPLO BASE-->
-
-<!-- <section class="container">
-    <section class="section-title">
-        <button onclick="showHideUsers()" class="btn btn-primary">Users</button>
-    </section>
-    <section class="users-section hide">
-        <div class="user">
-            <div class="username">Vicky</div>
-            <div class="avatar">
-                <img src="../assets/img/pooh-01.png" alt="User">
-            </div>
-        </div>
-        <div class="user">
-            <div class="username">Aadhya</div>
-            <div class="avatar">
-                <img src="../assets/img/pooh-02.png" alt="User">
-            </div>
-        </div>
-    </section>
-</section> -->
